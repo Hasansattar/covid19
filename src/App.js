@@ -55,7 +55,7 @@ function App() {
 
 
 
-      <img className={styles.image} src={coronaimage} alt="covid" />
+      <img className={styles.image} src={coronaimage} alt="covid19" />
 
       <Cards data={state} />
 
