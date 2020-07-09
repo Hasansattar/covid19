@@ -1,0 +1,24 @@
+body{
+  background-color: wheat;
+
+}
+.container{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.image{
+  width: 470px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media(max-width:770px){
+   .container{
+     margin:0 10%;
+   }
+   .image{
+     width: 100%;
+   }
+}
