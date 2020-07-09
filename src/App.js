@@ -5,7 +5,7 @@ import Cards from './components/Cards/Cards.js'
 import Chart from './components/Chart/Chart.js'
 import CountryPicker from './components/CountryPicker/CountryPicker.js'
 
-import coronaimage from './Image/covid19.png'
+import coronaimage from './Image/covid_19.png'
 
 import { fetchData } from './api/index.js'
 
