@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import styles from './App.module.css';
 
 import Cards from './components/Cards/Cards.js'
 import Chart from './components/Chart/Chart.js'
 import CountryPicker from './components/CountryPicker/CountryPicker.js'
 
-import coronaimage from './Image/covid_19.png'
+import Header from './components/Header/Header'
+import { CircleLoader } from 'react-spinners'
 
 import { fetchData } from './api/index.js'
+import { css } from '@emotion/react'
+
 
 
 function App() {
@@ -50,20 +53,23 @@ function App() {
 
 
 
+  const loader = css` margin-top : 50%; `
+
   return (
     <div className={styles.container}>
+      <Suspense fallback={<CircleLoader css={loader} size={200} color='rgb(101, 255, 222)' loading />}>
+      <Header />
 
 
 
-      <img className={styles.image} src={coronaimage} alt="covid19" />
 
       <Cards data={state} />
 
       <CountryPicker handleCountryChange={handleCountryChange} country={country} />
       <Chart data={state} country={country} />
 
-
-    </div>
+      </Suspense>
+    </div >
   );
 }
 

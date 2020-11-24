@@ -1,6 +1,9 @@
 .container{
+    margin: 10px auto;
     display: flex;
     justify-content: center;
+    display: block;
+    width: 85%;
      
     
 }
