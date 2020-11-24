@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { fetchDailyData } from '../../api/index.js'
 import { Line, Bar } from 'react-chartjs-2'
-import { Pie, HorizontalBar } from "react-chartjs-2";
+import { Pie } from "react-chartjs-2";
 import styles from './Chart.module.css'
 
 const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
