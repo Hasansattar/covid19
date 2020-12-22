@@ -3,7 +3,9 @@
  }
  
  .card{
+  box-shadow: 0 0 3px black !important;
  margin:0 2% !important;
+ 
  
  }
  .infected{

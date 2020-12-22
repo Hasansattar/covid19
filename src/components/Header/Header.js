@@ -35,19 +35,19 @@ const Header = () => {
                 }}
             >
                 <Toolbar>
-                    <img src={c} alt="ca" style={{ width: '50px' }} />
-                    <img src={f} alt="fe" style={{ width: '50px' }} />
-                    <img src={t} alt="te" style={{ width: '50px' }} />
+                    <img src={c} alt="ca" />
+                    <img src={f} alt="fe" />
+                    <img src={t} alt="te" />
 
-                    <Typography variant="h6" style={{ flexGrow: 10, fontSize: 30, fontWeight: 800, textShadow: 'red' }}>
+                    <Typography variant="h6" >
 
                         COVID 19           </Typography>
-                    <Button onClick={() => setsymptoms(true)} style={{ backgroundColor: '#e73d1f' }}>symptoms / Precautions</Button>
-
-                    <Button style={{ backgroundColor: 'white', borderRadius: '20px', fontWeight: 800 }}
+                    <Button onClick={() => setsymptoms(true)} style={{ backgroundColor: '#e73d1f' }}>symptoms</Button>
+                    &nbsp;&nbsp;
+                    <Button style={{ backgroundColor: 'white', borderRadius: '10px', fontWeight: 500 }}
                         startIcon={<GitHub />}
                         href="https://github.com/Hasansattar"
-                    >Hasan Sattar</Button>
+                    >github</Button>
                   
                 </Toolbar>
             </AppBar>

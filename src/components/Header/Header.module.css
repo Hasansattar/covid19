@@ -5,13 +5,20 @@
 }
 
 img {
-    width: 50%;
+    width: 50px;
     align-items: center;
 }
 
 img:hover {
     transform: scale(1.1);
     background: linear-gradient(to right, #e73d1f, #ff5031);
+
+}
+h6{
+    flex-grow: 10;
+     font-size: 30;
+      font-weight: 800;
+      text-shadow: red;
 
 }
 
@@ -44,4 +51,20 @@ img:hover {
         color: white;
         border: none;
     }
+    img{
+        width: 40px;
+    }
+    
 }
+
+@media screen and (max-width: 512px) {
+     img{
+         display: none;
+        
+     }
+
+
+}
+
+
+ 

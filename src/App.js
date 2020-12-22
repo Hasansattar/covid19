@@ -13,6 +13,7 @@ import { css } from '@emotion/react'
 
 
 
+
 function App() {
 
   const [state, setstate] = useState([{}])
@@ -56,6 +57,10 @@ function App() {
   const loader = css` margin-top : 50%; `
 
   return (
+     
+
+
+    
     <div className={styles.container}>
       <Suspense fallback={<CircleLoader css={loader} size={200} color='rgb(101, 255, 222)' loading />}>
       <Header />
@@ -70,6 +75,7 @@ function App() {
 
       </Suspense>
     </div >
+    
   );
 }
 

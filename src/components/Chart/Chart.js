@@ -90,7 +90,7 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
                     title: {
                         display: true,
                         fontSize: 24,
-                        fontColor: "White",
+                        fontColor: "black",
                         text: 'Global Data Chart',
                     },
                     legend: false,
@@ -102,7 +102,7 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
                             borderColor: null,
                             borderRadius: 2,
                             borderWidth: 1,
-                            color: "white",
+                            color: "black",
                             font: {
                                 size: 11,
                                 weight: 800,
